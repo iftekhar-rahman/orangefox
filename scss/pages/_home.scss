@@ -1,5 +1,7 @@
 /*================Home Page CSS===============*/
-
+html, body {
+    height: 100%;
+}
 // .switcher-btn
 .switcher-btn {
     height: 50px;
@@ -84,18 +86,17 @@
     height: 50px;
     padding-left: 20px;
 }
-.country-content{
-    display: none;
+
+
+
+.main-section {
+    height: 100%;
+    padding-top: 40px;
+    .main-container {
+        height: 100%;
+    }
 }
 
-// .list.countries-list ul {
-//     overflow-y: scroll;
-// }
-.sidebar {
-    flex-basis: 22%;
-    background: #1B1B21;
-    height: 100%;
-}
 .main-content {
     flex-basis: 78%;
     background-color: #1E1E24;
@@ -107,109 +108,77 @@
     }
 }
 
-.main-section {
+// .sidebar 
+.sidebar {
+    flex-basis: 22%;
+    background: #1B1B21;
     height: 100%;
-    padding-top: 40px;
-}
-
-.main-container {
-    height: 100%;
-}
-
-
-
-html, body {
-    height: 100%;
-}
-
-.sidebar-top {
-    padding: 30px 25px 20px;
-    color: #fff;
-}
-
-.layout-trigger {
-    position: absolute;
-    right: -30px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: #2B2C34;
-    text-align: center;
-    border-radius: 0 50px 50px 0;
-    line-height: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    padding-right: 5px;
-}
-
-.sidebar-top h4 {
-    color: #ED2D2D;
-    font-size: 16px;
-}
-
-
-
-.sidebar-top .boxed-btn {
-    display: block;
-}
-
-
-
-
-.sidebar-tab{
-    .nav {
-        border: 0;
-        li{
-            width: 50%;
-            a {
-                border: 0;
-                background: #24242B;
-                padding: 13px 10px;
-                text-align: center;
-                display: block;
-                &:hover{
-                    color: #fff;
-                }
-                &.active {
-                    background: #34343D;
-                    color: #fff;
-                    border-radius: 0;
-                }
+    .info{
+        color: #59B369;
+    }
+    .sidebar-top {
+        padding: 30px 25px 20px;
+        color: #fff;
+        h4 {
+            color: #ED2D2D;
+            font-size: 16px;
+        }
+        .layout-trigger {
+            position: absolute;
+            right: -30px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+            background: #2B2C34;
+            text-align: center;
+            border-radius: 0 50px 50px 0;
+            line-height: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            padding-right: 5px;
+        }
+        .boxed-btn {
+            display: block;
+        }
+    }
+    .sidebar-tab{
+        height: 100%;
+        .tab-content {
+            background: #34343D;
+            height: 100%;
+            .tab-pane {
+                height: 100%;
             }
-            &:first-child a {
-                border-radius: 0 30px 0 0;
-            }
-            &:last-child a {
-                border-radius: 30px 0 0 0;
+        }
+        .nav {
+            border: 0;
+            li{
+                width: 50%;
+                a {
+                    border: 0;
+                    background: #24242B;
+                    padding: 13px 10px;
+                    text-align: center;
+                    display: block;
+                    &:hover{
+                        color: #fff;
+                    }
+                    &.active {
+                        background: #34343D;
+                        color: #fff;
+                        border-radius: 0;
+                    }
+                }
+                &:first-child a {
+                    border-radius: 0 30px 0 0;
+                }
+                &:last-child a {
+                    border-radius: 30px 0 0 0;
+                }
             }
         }
     }
 }
-
-
-
-.sidebar{
-    .info{
-        color: #59B369;
-    }
-}
-.sidebar-tab .tab-content {
-    background: #34343D;
-}
-
-.sidebar-tab {
-    height: 100%;
-}
-
-.tab-content {
-    height: 100%;
-}
-
-.sidebar-tab .tab-content .tab-pane {
-    height: 100%;
-}
-
-
 .list {
     ul {
         li {
@@ -220,68 +189,60 @@ html, body {
             img {
                 max-width: 25px;
             }
+            .connect {
+                position: absolute;
+                padding-right: 25px;
+                font-size: 15px;
+                border: 1px solid #4A4A54;
+                padding: 2px 10px;
+                border-radius: 50px;
+                right: 55px;
+                top: 12px;
+                z-index: 5;
+                opacity: 0;
+                visibility: hidden;
+                &:hover {
+                    background: #59B369;
+                    border-color: #59B369;
+                    color: #fff;
+                }
+            }
+            &:hover{
+                .connect {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
             .country-title {
                 padding: 13px 20px 13px 50px;
+                .angle-down {
+                    position: absolute;
+                    right: 20px;
+                    top: 14px;
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid #4A4A54;
+                    border-radius: 50px;
+                    text-align: center;
+                    line-height: 25px;
+                    &:hover {
+                        background: #59B369;
+                        border-color: #59B369;
+                    }
+                }
+            }
+            .country-content {
+                padding: 15px 20px;
+                display: none;
             }
         }
     }
 }
-
-
-.country-content {
-    padding: 15px 20px;
-}
-
-.connect {
-    position: absolute;
-    padding-right: 25px;
-    font-size: 15px;
-    border: 1px solid #4A4A54;
-    padding: 2px 10px;
-    border-radius: 50px;
-    right: 55px;
-    top: 12px;
-    z-index: 5;
-    opacity: 0;
-    visibility: hidden;
-    &:hover{
-        color: #fff;
-    }
-}
-
-.list ul li .connect:hover {
-    background: #59B369;
-    border-color: #59B369;
-}
-
-.angle-down {
-    position: absolute;
-    right: 20px;
-    top: 14px;
-    width: 25px;
-    height: 25px;
-    border: 1px solid #4A4A54;
-    border-radius: 50px;
-    text-align: center;
-    line-height: 25px;
-}
-
-.list ul li .angle-down:hover {
-    background: #59B369;
-    border-color: #59B369;
-}
-
-.list ul li:hover .connect {
-    opacity: 1;
-    visibility: visible;
-}
-
 .icon {
     position: absolute;
     left: 20px;
     top: 12px;
 }
-
 .buttons-wrap{
     .boxed-btn{
         &:hover{

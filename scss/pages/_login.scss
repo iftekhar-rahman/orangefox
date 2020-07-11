@@ -1,0 +1,78 @@
+
+/*================Login Page CSS===============*/
+
+.login-form-area{
+    background-color: #2B2C34;
+}
+
+.loginform {
+    width: 440px;
+    background: #1E1E24;
+    padding: 70px 60px 30px;
+    .form-item {
+        color: #fff;
+        font-size: 14px;
+        input {
+            border-bottom: 1px solid #4A4A54;
+            width: 100%;
+            padding: 8px 0px;
+        }
+        &.logo{
+            margin-bottom: 80px;
+        }
+        &.username {
+            margin-bottom: 60px;
+        }
+        &.password {
+            margin-bottom: 25px;
+        }
+        &.submit{
+            margin-top: 25px;
+            margin-bottom: 40px;   
+            .boxed-btn{
+                padding: 9px 30px;
+                background: transparent;
+                opacity: .7;
+                &:hover{
+                    opacity: 1;
+                    background-color: #59B369;
+                }
+            } 
+        }
+        &.form-footer{
+            a{
+                color: #59B369;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.login-switcher {
+    .switcher-btn {
+        height: 25px;
+        border: 0;
+        .onoffswitch-switch {
+            height: 16px;
+            width: 15px;
+            margin: 2px;
+            right: 20px;
+            .onoffswitch-label {
+                margin: 0;
+            }
+        }
+        .onoffswitch {
+            width: 40px;
+        }
+        .onoffswitch-inner:before, .onoffswitch-inner:after {
+            height: 20px;
+        }
+        .onoffswitch-inner:before {
+            content: "";
+        }
+        .onoffswitch-inner:after {
+            content: "";
+            background: #000000;
+        }
+    }
+}
