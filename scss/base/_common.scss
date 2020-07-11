@@ -18,9 +18,14 @@ a, button, img, input, span {
     @extend %basetransition; 
 }
 input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
-    border-radius: 5px;
-    height: 50px;
-    padding: 8px 20px;
+    height: 40px;
+    padding: 8px 10px;
+    background: transparent;
+    border: 0;
+    width: 240px;
+    opacity: .7;
+    font-size: 15px;
+    color: #fff;
 }
 // .form-group {
 //     margin-bottom: 25px;
@@ -39,7 +44,7 @@ input[type=submit], button[type=submit]{
 }
 input, textarea{
 	@include placeholder{
-		color: $body-color;
+        color: #fff;
 	}
 }
 // input[type=submit], button[type=submit]{
